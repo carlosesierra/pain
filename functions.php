@@ -2,6 +2,7 @@
 function pain_script_enqueue() {
 	wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/pain.css', array(), '1.0', 'all');
 	wp_enqueue_script('customjs', get_template_directory_uri() . '/js/pain.js', array(), '1.0', true);
+
 }
 
 add_action('wp_enqueue_scripts', 'pain_script_enqueue');
@@ -19,7 +20,7 @@ add_theme_support('post-thumbnails');	/*===POST THUMBNAILS IN POT AND PAGES===*/
 set_post_thumbnail_size( 825, 510, true );
 add_theme_support( 'title-tag' );	/*===DOCUMENT TITLE===*/
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption') );
-add_theme_support( 'post-formats', array('image', 'video', 'gallery', 'aside' ) );
+add_theme_support( 'post-formats', array('image', 'video', 'gallery', 'content-left' ) );
 add_theme_support( 'automatic-feed-links' );	/*===ADD DEFAULT POSTS AND COMMENTS RSS FEED LINKS TO HEAD===*/
 add_theme_support( 'editor_style');
 
@@ -86,5 +87,12 @@ function pain_add_editor_styles() {
     add_editor_style( 'custom-editor-style.css' );
 }
 add_action( 'admin_init', 'pain_add_editor_styles' );
+
+/*===REPLACES THE EXCERPT "READ MORE" TEXT BY A LINK===*/
+function new_excerpt_more($more) {
+       global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read more</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 

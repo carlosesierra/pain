@@ -8,9 +8,9 @@
 <?php dynamic_sidebar('sidebar'); ?>
 </div>
 
- <?php the_widget( 'WP_Widget_Text', array(), array() ); ?>
+<?php the_widget( 'WP_Widget_Text', array(), array() ); ?>
 <div class="mn">
-	<div class="hamburger"><a href="#">menu</a></div>
+	<div class="mnbtn"><a href="#">menu</a></div>
 	<nav role="navigation" class="mainmenu" id="menu">
     	<?php wp_nav_menu(array('theme_location'=>'primary')); ?>
     	<?php wp_nav_menu(array('theme_location'=>'social')); ?>
@@ -21,3 +21,6 @@
 <?php posts_nav_link(); ?>
 </div>
 </div>
+
+
+

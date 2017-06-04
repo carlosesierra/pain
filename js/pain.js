@@ -1,13 +1,6 @@
 jQuery(document).ready(function($) {
  
-    $('.menu li a').click(function(event){     
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top -80});
-        $("#menu").toggle();
-    });
-
-
-	$(".hamburger a").click(function(event){
+	$(".mnbtn a").click(function(event){
 		event.preventDefault();
 	    $("#menu").toggle();
 	});
@@ -47,4 +40,6 @@ jQuery(document).ready(function($) {
 	}).resize();
 
 });
+
+
 

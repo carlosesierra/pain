@@ -10,8 +10,8 @@
               <?php the_title(); ?>
             </a>
           </h1>
-      		<div class="thumbnail-img">
-            <?php the_post_thumbnail('large'); ?>
+      		<div class="thumb">
+            <?php the_post_thumbnail('full'); ?>
           </div>
           <article>
         		  <?php the_content(); ?>

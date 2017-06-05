@@ -6,9 +6,11 @@
 </div>
 <div class="widgets-area">
 <?php dynamic_sidebar('sidebar'); ?>
+<div class="lang"><?php the_widget( '', array(), array() ); ?></div>
 </div>
 
-<?php the_widget( 'WP_Widget_Text', array(), array() ); ?>
+
+
 <div class="mn">
 	<div class="mnbtn"><a href="#">menu</a></div>
 	<nav role="navigation" class="mainmenu" id="menu">

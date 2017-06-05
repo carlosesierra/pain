@@ -1,15 +1,4 @@
-<section>
-  <div class="thumbnail-vid">
-    <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-      <?php the_post_thumbnail('large'); ?>
-    </a>
-    <div class="title">
-      <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-        <?php the_title(); ?>
-      </a>
-    </div>
-    <div class="cont-vid">
-    <?php the_content(); ?>
-    </div>
-  </div>
+<section id="<?php $postid = get_the_ID(); echo $postid; ?>" class="post-vid">
+  <div class="cont-vid"><?php the_post_thumbnail('full'); ?></div>
+  <div class="cont"><?php the_content(); ?> </div>
 </section>

@@ -38,10 +38,11 @@ function pain_widget_setup() {
 			'description' => 'Standard Sidebar',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '',
-			'after_title'   => '',
+			'before_title'  => 'class="div %2$s">',
+			'after_title'   => '</div>',
 		)
 	);	
+
 }
 
 add_action('widgets_init','pain_widget_setup');

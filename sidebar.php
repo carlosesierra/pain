@@ -9,8 +9,6 @@
 <div class="lang"><?php the_widget( '', array(), array() ); ?></div>
 </div>
 
-
-
 <div class="mn">
 	<div class="mnbtn"><a href="#">menu</a></div>
 	<nav role="navigation" class="mainmenu" id="menu">

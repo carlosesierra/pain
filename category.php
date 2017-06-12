@@ -6,6 +6,7 @@
 	 if (have_posts() ) :  
 		while (have_posts() ) :the_post(); ?>
 			<section>
+        <div class="cont-wrapp">
   			<div class="thumb">
           <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
             <?php the_post_thumbnail('large'); ?>
@@ -16,7 +17,8 @@
             <?php the_title(); ?>
           </a>
           <?php the_excerpt(); ?>
-        </div>     
+        </div>
+        </div>   
     	</section>
     <?php endwhile;
   endif;

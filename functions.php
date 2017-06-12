@@ -20,7 +20,7 @@ add_theme_support('post-thumbnails');	/*===POST THUMBNAILS IN POT AND PAGES===*/
 set_post_thumbnail_size( 825, 510, true );
 add_theme_support( 'title-tag' );	/*===DOCUMENT TITLE===*/
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption') );
-add_theme_support( 'post-formats', array('image', 'video', 'gallery', 'content-left' ) );
+add_theme_support( 'post-formats', array('image', 'video', 'gallery', 'aside', 'custom' ) );
 add_theme_support( 'automatic-feed-links' );	/*===ADD DEFAULT POSTS AND COMMENTS RSS FEED LINKS TO HEAD===*/
 add_theme_support( 'editor_style');
 
@@ -96,4 +96,11 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+
+function my_home_category( $query ) {
+ if ( $query->is_home() && $query->is_main_query() ) {
+ $query->set( 'cat', '2');
+ }
+}
+add_action( 'pre_get_posts', 'my_home_category' );
 

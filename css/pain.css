@@ -161,18 +161,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0fdff', end
 /*contact form 7*/
 div.wpcf7 {padding: 1em 5%; }
 .wpcf7 p {width: 90%; font-size: 16px; margin: 0 auto; float: none; }
-.wpcf7 p input, .wpcf7 p textarea {width: 96%; border: solid 1px #efefef; padding: 1em 2%; float: none; }
+.wpcf7 p select, .wpcf7 p input, .wpcf7 p textarea{width: 96%; border: solid 1px #efefef; float: none; height: 40px; line-height: 40px; display: block;}
 .wpcf7 p {line-height: 1.2em; }
-input.wpcf7-form-control.wpcf7-submit {color: #fff; width: 100%; border: 1px solid #999; padding: 1em 5%; float: none; background: rgba(82,86,89,1); background: -moz-linear-gradient(-45deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(82,86,89,1)), color-stop(100%, rgba(40,44,48,1))); background: -webkit-linear-gradient(-45deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); background: -o-linear-gradient(-45deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); background: -ms-linear-gradient(-45deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); background: linear-gradient(135deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525659', endColorstr='#282c30', GradientType=1 ); }
+input.wpcf7-form-control.wpcf7-submit {color: #fff; width: 100%; border: 1px solid #999; padding: 0; float: none; background: rgba(82,86,89,1); background: -moz-linear-gradient(-45deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(82,86,89,1)), color-stop(100%, rgba(40,44,48,1))); background: -webkit-linear-gradient(-45deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); background: -o-linear-gradient(-45deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); background: -ms-linear-gradient(-45deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); background: linear-gradient(135deg, rgba(82,86,89,1) 0%, rgba(40,44,48,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525659', endColorstr='#282c30', GradientType=1 ); }
 .wpcf7-form p {margin-bottom: 1em; }
 
 @media screen and (min-width: 768px) {
 /*home*/
 
-.hm-lnd{display: inline-block; padding-bottom: 100px;}
+.hm-lnd{display: inline-block; padding-bottom: 30px; background-position: center center;}
 .hm-logo{width: 44%; padding: 0 0 0 5%; display: inline-block;background-size: 1000px 1000px; background-position-x: right; background-position-y: bottom;max-width: 400px!important}
 .hm-logo img{width: 100%; padding: 1em 0; max-width: 100%!important;}
-.hm-copy{width: 45%; padding: 1em 5% 1em 0; display: inline-block; float: right;} 
+.hm-copy{width: 45%; padding: 70px 5% 1em 0; display: inline-block; float: right;} 
 .hm-copy .copy-01, .hm-copy .copy-02, .hm-copy .copy-03{float: right;} .hm-copy .copy-01{width: 50%;} .hm-copy .copy-02{width: 70%;} .hm-copy .copy-03{width: 90%;}
 
 .hm-block{width: 100%; padding: 1em 0;display: inline-block;}
